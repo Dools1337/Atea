@@ -1,3 +1,6 @@
+# Simple finnish user termination script for Atea Global Service
+## TODO : Add some checks and stop the script in the event of a typo. 
+
 cls
 Import-module activedirectory
 $j=Read-Host "Enter the samaccountname" 
