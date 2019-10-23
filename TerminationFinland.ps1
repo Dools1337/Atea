@@ -14,7 +14,6 @@ ForEach ($Group in $jgroups.memberof)
 	Get-ADGroup $Group | Remove-ADGroupMember -confirm:$false -members $j
 	}
 Add-ADGroupMember -Identity DKHOS-SG-Stopped_Employees -members $j
-$ou_finland = "OU=Users Disabled,OU=FI,OU=Country,DC=one,DC=local"
 $path = (get-aduser $j).DistinguishedName
 Move-ADObject -Identity $path -TargetPath "$ou2" 
 Disable-adaccount $j
