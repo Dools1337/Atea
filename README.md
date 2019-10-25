@@ -15,6 +15,9 @@ Most of them requires admin privilege, some will include a self-elevating script
 
 - ActiveDirectory Module in some cases (not available for P$ 7 yet)
 
+- RSAT Module/Exchange Module
+
+
 #### Description of each scripts 
 
 Copy/Paste - 
