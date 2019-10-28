@@ -45,8 +45,8 @@ It will :
 
 ## Authors
 
-Timour Varrasse @ Atea Global Service
-Hemmo Konturi (formating some stuff and being generally super helpful)
+* Timour Varrasse @ Atea Global Service
+* Hemmo Konturi (formating some stuff and being generally super helpful)
 
 ## License
 
