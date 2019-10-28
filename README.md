@@ -1,6 +1,6 @@
 # Atea SD Scripts
 
-A small collection of script designed to make my life easier when dealing with everyday SD tasks. 
+A small collection of script designed to make life easier when dealing with everyday SD tasks. 
 
 ## Getting Started
 
