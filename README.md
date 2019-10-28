@@ -20,13 +20,13 @@ Most of them requires admin privilege, some will include a self-elevating script
 
 #### Description of each scripts 
 
-Copy/Paste - 
+* Copy/Paste - 
 
 ```
 Nothing fancy just copy AD Groups to one user to another with a prompt
 ```
 
-Terminationfinland 
+* Terminationfinland @ Atea
 
 ```
 Enter username of user 
@@ -41,12 +41,67 @@ It will :
  - Disable the account
  
  ```
+ * TerminationLOG @ Atea
+ 
+ Same principle as for Finland, user is moved to "Users disabled" OU since you won't need to specify the month.
+ 
+ * Flushteam 
+ 
+Just copy/paste into your favorite notepad editor/atom/sublime/visualcode
+and run it. 
+
+Save it somewhere, double click on it / Navigate to that path and run .\flush.ps1 
+
+Alternatively copy/paste this into a powershell window : 
+```
+iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JeWxX'))
+```
+
+Clearing those locations + self elevating command.
+
+%AppData%\Microsoft\teams\application cache\cache
+
+%AppData%\Microsoft\teams\blob_storage
+
+%AppData%\Microsoft\teams\databases
+
+%AppData%\Microsoft\teams\cache
+
+%AppData%\Microsoft\teams\gpucache
+
+%AppData%\Microsoft\teams\Indexeddb
+
+%AppData%\Microsoft\teams\Local Storage
+
+%AppData%\Microsoft\teams\tmp
+
+%LocalAppData%\Google\Chrome\User Data\Default\Cache
+
+%LocalAppData%\Google\Chrome\User Data\Default\Cookies
+
+%LocalAppData%\Google\Chrome\User Data\Default\Web Data
+
+Internet Explorer Temporary Internet Files
+
+Internet Explorer Cookies
+
+* Delete Skype Cache
+
+Will do exactly that + kill lync & skype process.
+
+* Litigation Hold UI
+
+Complete UI in powershell to handle litigation hold. 
+Exchange connection within the script is currently broken
+Just connect with your own connector and you should be fine (or run it on premises)
+
 
 
 ## Authors
 
 * Timour Varrasse @ Atea Global Service
 * Hemmo Konturi (formating some stuff and being generally super helpful)
+* Eyal Doron (Most of the Litigation Hold UI)
 
 ## License
 
