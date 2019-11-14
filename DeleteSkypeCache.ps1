@@ -6,8 +6,8 @@ param(
 
 $UserProfileDirs = (GCI C:\Users).FullName
 $LyncPath = "\AppData\Local\Microsoft"
-C:\Windows\System32\taskkill /im communicator.exe
 C:\Windows\System32\taskkill /im lync.exe
+Set-Itemproperty -path 'HKCU:\Software\Microsoft\Office\16.0\Lync' -Name 'EnableWAM' -value '1'
 Foreach ($obj in $UserProfileDirs)
 	{
 	$CurrentUserProfileDir = $obj+$LyncPath
@@ -27,3 +27,8 @@ Foreach ($obj in $UserProfileDirs)
 				}
 		}
 	}
+$GetProcessJob = Start-Job -ScriptBlock {Start-process lync.exe}
+Wait-Job $GetProcessJob
+$GetProcessResult = Receive-Job -Job $GetProcessJob
+##Wait-Event -SourceIdentifier "ProcessStarted" -Timeout 10
+Set-Itemproperty -path 'HKCU:\Software\Microsoft\Office\16.0\Lync' -Name 'EnableWAM' -value '0'
