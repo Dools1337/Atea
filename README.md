@@ -85,12 +85,17 @@ Internet Explorer Temporary Internet Files
 
 Internet Explorer Cookies
 
-* Delete Skype Cache
+* Skype cleanup/repair tool
 
-- Updated to reflect WAM changes / overhaul of the script
+iwr -useb https://git.io/JeroL | iex
+(copy/paste into powershell window)
+
+```
+Updated to reflect WAM changes / overhaul of the script
 Should clean everything and restart Skype 4 business. 
-- We basicall alter this value HKCU:\Software\Microsoft\Office\16.0\Lync set it to 1 
-restart then set-it up to 0 again. 
+We basicall alter this value HKCU:\Software\Microsoft\Office\16.0\Lync set it to 1 
+restart then set-it up to 0 again.
+```
 
 * Litigation Hold UI
 
