@@ -54,7 +54,7 @@ Save it somewhere, double click on it / Navigate to that path and run .\flush.ps
 
 Alternatively copy/paste this into a powershell window : 
 ```
-iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JeWxX'))
+iwr -useb https://git.io/JeWxX | iex
 ```
 
 Clearing those locations + self elevating command.
@@ -87,7 +87,10 @@ Internet Explorer Cookies
 
 * Delete Skype Cache
 
-Will do exactly that + kill lync & skype process.
+- Updated to reflect WAM changes / overhaul of the script
+Should clean everything and restart Skype 4 business. 
+- We basicall alter this value HKCU:\Software\Microsoft\Office\16.0\Lync set it to 1 
+restart then set-it up to 0 again. 
 
 * Litigation Hold UI
 
