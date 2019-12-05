@@ -53,7 +53,7 @@ and run it.
 Save it somewhere, double click on it / Navigate to that path and run .\flush.ps1 
 
 Alternatively copy/paste this into a powershell window : 
-```
+```powershell
 iwr -useb https://git.io/JeWxX | iex
 ```
 
@@ -88,7 +88,7 @@ Internet Explorer Cookies
 * Skype cleanup/repair tool :
 
      Copy/paste into powershell window) > 
-```
+```powershell
 iwr -useb https://git.io/JeroL | iex
 ```
 
